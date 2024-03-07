@@ -1,5 +1,5 @@
 # Wiki
 
-1. [Card Align](https://matteofuso.github.io/Wiki/card/)
+1. [Card Align](https://matteofuso.github.io/Sites/wiki/card)
 
-[GitHub](https://github.com/matteofuso/Wiki)
+[GitHub](https://github.com/matteofuso/Sites/wiki)
