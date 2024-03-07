@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Great Pacific Garbage Patch</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="src/inglese.css">
+    <script src="src/index.js"></script>
+    <link rel="icon" type="image/x-icon" href="src/favicon.ico">
+  </head>
+  <body>
+    <div id="head" class="w3-row">
+      <div class="w3-bar w3-col a10">
+        <a href="index.html" class="w3-bar-item w3-button w3-hover-teal">Home</a>
+        <div class="menu">
+          <a href="diritto.html" class="w3-bar-item w3-button w3-hover-teal">Diritto</a>
+          <a href="italiano.html" class="w3-bar-item w3-button w3-hover-teal">Italiano</a>
+          <a href="chimica.html" class="w3-bar-item w3-button w3-hover-teal">Chimica</a>
+          <a href="biologia.html" class="w3-bar-item w3-button w3-hover-teal">Biologia</a>
+          <a class="w3-bar-item w3-button w3-hover-teal w3-teal">Inglese</a>
+          <a href="tecnologia.html" class="w3-bar-item w3-button w3-hover-teal">Tecnologia</a>
+        </div>
+      </div>
+      <div class="w3-col a2">
+        <div class="hamburgher w3-right" onclick="menu()">
+          <span class="f"></span>
+          <span class="s"></span>
+          <span class="t"></span>
+        </div>
+      </div>
+    </div>
+    <div id="body">
+      <select id="language">
+        <option value="eng" selected>English</option>
+        <option value="ita">Italiano</option>
+      </select>
+      <header class="bgimg w3-display-container" id="home">
+        <div class="w3-display-middle w3-center">
+          <span class="w3-text-white mobile-small" style="font-size:90px">The Great Pacific Garbage Patch</span>
+        </div>
+      </header>
+      <div class="w3-container mg-auto" style="max-width:1200px">
+        <h1>What is the Great Pacific Garbage Patch?</h1>
+        <p>
+          The Great Pacific Garbage Path is a collection of marine debris located in the North of Pacific Ocean. Denser debris can sink beneath the surface (It is estimated about 70% of debris), making the area nearly impossible to measure. His estimated surface is about 1.6 million km<sup>2</sup>, an area three times bigger than France. Caused to calm water in the center of a gyre, debris are trapped there.<br>
+          It was discovered by Charles Moore who was sailing from Hawaii to California after competing in a yachting race. Crossing the Pacific, he and his crew noticed millions of pieces of plastic surrounding his ship.<br>
+          Most debris came from plastic. They most came from land-based source, the rest came from boats and other marine sources. Thanks to the sun, plastic does not simply biodegrade, it breaks into tinier and tinier pieces, a process also known as photodegradation.<br>
+        </p>
+        <h1>Does it hurt marine life?</h1>
+        <div class="w3-row flex">
+          <div class="w3-third w3-padding w3-col s12 m6 l4">
+            <div class="w3-card-4 flex-height blur-container">
+              <div class="card-img bg-1 blur-max" id="sensibile-blur"></div>
+              <div id="sensibile-alert" class="blur-content sensible-content">
+                <i class="fa fa-eye-slash fa-2x" aria-hidden="true"></i>
+                <p>Sensitive content</p>
+                <button class="w3-button" id="sensibile-button">See photo</button>
+              </div>
+              <div class="w3-container">
+                <p>Albatrosses mistake plastic resin pellets for fish eggs and feed them to chicks, which die of starvation or ruptured organs.</p>
+              </div>
+            </div>
+          </div>
+          <div class="w3-third w3-padding w3-col s12 m6 l4">
+            <div class="w3-card-4 flex-height">
+              <div class="card-img bg-2"></div>
+              <div class="w3-container">
+                <p>Turtles mistake the gelatinous texture of plastic for a jelly, their favorite food. They can also easily be entangled in cheap fishing nets.</p>
+              </div>
+            </div>
+          </div>
+          <div class="w3-third w3-padding w3-col s12 m6 l4">
+            <div class="w3-card-4 flex-height">
+              <div class="card-img bg-3"></div>
+              <div class="w3-container">
+                <p>The most impact on marine life is the phenomenon of “ghost fishing”. That happen when discarded cheap nets (Because they are made by plastic) continue to “catch” marine mammals, such as this Hawaiian monk seal.</p>
+              </div>
+            </div>
+          </div>
+          <div class="w3-third w3-padding w3-col s12 m6 l6 mg-auto">
+            <div class="w3-card-4 flex-height">
+              <div class="card-img bg-4"></div>
+              <div class="w3-container">
+                <p>Marine debris can prevent algae and plankton from receiving enough sunlight to create nutrients. When this first-order consumer are threatened, all food chain is in danger.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h1>Is it possible Patching Up the Patch?</h1>
+        <p>Cause by the Garbage Patch distance from any country, no one will take responsibility or provide any founding to clean it up.</p>
+        <div class="w3-panel w3-leftbar w3-border-blue bgop-medium citazione">
+          <span>❝</span>
+          <p class="w3-large margin"><i>“Cleaning up the garbage patch would "bankrupt" any country that tried it.”</i></p>
+          <p>Charles Moore</p>
+        </div>
+        <p>It is bigger than you think. The Marine Debris Program has estimated that it would take sixty-seven ships one year to clean up less than one percent of the North Pacific Ocean.</p>
+        <h1>What can we do?</h1>
+        <ul>
+          <li>Prefer Bioplastic</li>
+          <li>Stop the use of plastic</li>
+          <li>Don't let the plastic go in the water</li>
+          <li>Get involved! Participate in local cleanups in your area.</li>
+          <li>Reuse items whenever possible. Choose reusable items over disposable ones.</li>
+          <li>Reduce the amount of waste you produce.</li>
+          <li>Do not buy disposable items</li>
+        </ul>
+        <h1>Do you want a change?</h1>
+        <a href="https://www.wwf.it/cosa-puoi-fare-tu/eventi/missionespiaggepulite/" target="_blank" class="w3-row">
+          <p class="w3-container w3-padding w3-green w3-half underline nomargin">Yes</p>
+          <p class="w3-container w3-padding w3-red w3-half underline nomargin">No</p>
+        </a>
+        <br>
+      </div>
+    </div>
+  </body>
+  <script src="src/inglese.js"></script>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Come allineare le card</title>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="card.css">
+        <script src="https://www.w3schools.com/lib/w3codecolor.js"></script>
+        <meta name="theme-color" content="#C2FC03">
+        <style>
+            *{
+                text-align: justify;
+            }
+            .sticky{
+                position: fixed;
+                top:0;
+            }
+            .margin{
+                margin-top: 40px
+            }
+            .justifynt *{
+                text-align: initial;
+            }
+            .bg-1{
+                background-image: url("https://www.w3schools.com/w3css/img_car.jpg");
+            }
+            .bg-2{
+                background-image: url("https://static.vecteezy.com/packs/media/components/global/search-explore-nav/img/vectors/term-bg-1-666de2d941529c25aa511dc18d727160.jpg");
+            }
+            .bg-3{
+                background-image: url("https://www.ideegreen.it/wp-content/uploads/2018/08/gabbiano-reale-mediterraneo.jpg");
+            }
+            .bg-4{
+                background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Pope_Francis_South_Korea_2014.png/640px-Pope_Francis_South_Korea_2014.png");
+                /* Opzionale, per centrarle meglio */
+                /* https://developer.mozilla.org/en-US/docs/Web/CSS/background-position?retiredLocale=it */ 
+                background-position: 0 20%
+            }
+        </style>
+    </head>
+    <body>
+        <div class="w3-bar sticky w3-white w3-card">
+            <a href="../"><div class="w3-bar-item w3-button w3-green">Home</div></a>
+        </div>
+        <div class="w3-panel w3-card w3-light-grey justifynt margin">
+            <!-- https://www.w3schools.com/w3css/w3css_code.asp -->
+            <h4>Come applicare il Tutto</h4>
+            <p>Importa il foglio CSS...</p>
+            <div class="w3-code htmlHigh">
+                &lt;link rel="stylesheet" href="https://wiki.fuso.ml/card/card.css">
+            </div>
+            <p>...o in alternativa le seguenti classi</p>
+            <div class="w3-code cssHigh">
+                .flex-height{<br>
+                &nbsp; min-height: 100%;<br>
+                }<br>
+                .flex{<br>
+                &nbsp; display: flex;<br>
+                &nbsp; flex-wrap: wrap;<br>
+                }<br>
+                .card-img{<br>
+                &nbsp; width: 100%;<br>
+                &nbsp; aspect-ratio: 1920/1080;<br>
+                &nbsp; /* Ciò che Forza le proporzioni a 1920 di larghezza e 1080 di altezza */<br>
+                &nbsp; background-repeat: no-repeat;<br>
+                &nbsp; background-size: 100%;<br>
+                &nbsp; background-position: center;<br>
+                }<br>
+            </div>
+            <p>Crea il contenitore delle carte</p>
+            <div class="w3-code htmlHigh notranslate">
+                &lt;div class="w3-row flex"><br>
+                &nbsp; ...<br>
+                &lt;/div>
+            </div>
+            <p>Crea le tue carte</p>
+            <div class="w3-code htmlHigh notranslate">
+                &lt;div class="w3-third w3-padding"><br>
+                &nbsp; &lt;div class="w3-card-4 flex-height"><br>
+                &nbsp; &nbsp; &lt;div class="card-img bg-1">&lt;/div><br>
+                &nbsp; &nbsp; &lt;div class="w3-container"><br>
+                &nbsp; &nbsp; &nbsp; &lt;p>Testo della card...&lt;/p><br>
+                &nbsp; &nbsp; &lt;/div><br>
+                &nbsp; &lt;/div><br>
+                &lt;/div>
+            </div>
+            <p>Crea una classe css con un immagine di sfondo e applica la classe alla card, come al codice precedente</p>
+            <div class="w3-code cssHigh">
+                .bg-1{<br>
+                &nbsp; background-image: url("<a href="https://www.w3schools.com/w3css/img_car.jpg" target="_blank">https://www.w3schools.com/w3css/img_car.jpg</a>");<br>
+                &nbsp; /* Opzionale, per centrarle meglio */<br>
+                &nbsp; /* <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-position?retiredLocale=it" target="_blank">https://developer.mozilla.org/en-US/docs/Web/CSS/background-position?retiredLocale=it</a> */ <br>
+                &nbsp; /* background-position: 0 20% */<br>
+                }
+            </div>
+        </div>
+        <h1 class="w3-center">Esempio:</h1>
+        <div class="w3-row flex">
+            <div class="w3-third w3-col s12 m6 l4 w3-padding">
+                <div class="w3-card-4 flex-height">
+                    <div class="card-img bg-1"></div>
+                    <div class="w3-container">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ipsam vitae enim possimus sint minus aliquam rem! Vitae accusantium nemo odit quae neque, facere labore eaque fugit quas! Quaerat, facilis!</p>
+                    </div>
+                </div> 
+            </div>
+            <div class="w3-third w3-col s12 m6 l4 w3-padding">
+                <div class="w3-card-4 flex-height">
+                    <div class="card-img bg-2"></div>
+                    <div class="w3-container">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-third w3-col s12 m6 l4 w3-padding">
+                <div class="w3-card-4 flex-height">
+                    <div class="card-img bg-3"></div>
+                    <div class="w3-container">
+                        <h1 class="w3-text-red"><b>Povero Gabbiano...!</b></h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div> 
+            </div>
+            <div class="w3-third w3-col s12 m6 l12 w3-padding">
+                <div class="w3-card-4 flex-height">
+                    <div class="card-img bg-4"></div>
+                    <div class="w3-container">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ipsam vitae enim possimus sint minus aliquam rem! Vitae accusantium nemo odit quae neque, facere labore eaque fugit quas! Quaerat, facilis! <b>Amen!</b></p>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <script>
+            w3CodeColor();
+        </script>
+    </body>
+</html>

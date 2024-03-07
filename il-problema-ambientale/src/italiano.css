@@ -1,0 +1,110 @@
+#readingbar{
+    transition: ease 2s;
+    overflow: hidden;
+    padding: 0 10px;
+    background-color: rgba(240, 128, 128);
+    border-radius: 10px;
+    width: 0;
+    height: 0;
+}
+#bar{
+    position:sticky;
+    position: -webkit-sticky;
+    top:38px;
+    padding-top: 8px;
+    background-color: rgb(230, 223, 214);
+    z-index: 3;
+}
+.bar{
+    background-color: rgb(230, 223, 214)
+}
+
+.testo{
+    max-width: 2000px;
+    margin:auto
+}
+#body{
+    margin-top: 38px
+}
+/* Testo */
+.testo div{
+    display: table;
+    margin: 10px;
+    line-height: 2em;
+    font-size: 1.1em;
+    padding: 0 15px
+}
+.testo div span{
+    width: 10vw;
+    float: left;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 127px;
+    margin-top: 10px;
+    margin-left: 10px;
+    z-index: -2;
+}
+
+.testo span div{
+    display: inline;
+    padding: 10px;
+    margin: -10vw;
+}
+
+.atto strong, .scena strong{
+    position: sticky;
+    position: -webkit-sticky;
+    background-color: rgb(230, 223, 214);
+    padding-right: 10vw;
+    z-index: -1
+}
+.atto strong{
+    top: 68px;
+    padding-top:10px
+}
+.scena strong{
+    padding-top:10px;
+    top: 95px;
+}
+.scena, .atto{
+    margin-left: 10px;
+    z-index: 3;
+}
+
+sub{
+    z-index: -1;
+}
+
+@media screen and (max-width: 700px) {
+    .testo div span{
+        width: 100%;
+        top:62px;
+        margin: 0 !important;
+        padding-top: 8px;
+        margin: initial;
+        margin-left: 25px;
+        background-color: rgb(230, 223, 214);
+        z-index: 0;
+    }
+    .atto strong, .scena strong{
+        position: initial;
+    }
+    .testo div div{
+        margin:0;
+        padding:0
+    }
+}
+
+/* Autore */
+
+.autore{
+    float: right;
+}
+.autore::before {
+    content: "( Scritto da: "
+}
+.autore::after {
+    content: " )"
+}

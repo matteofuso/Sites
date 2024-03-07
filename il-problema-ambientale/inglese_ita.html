@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>L'isola di Plastica</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="src/inglese.css">
+    <script src="src/index.js"></script>
+    <link rel="icon" type="image/x-icon" href="src/favicon.ico">
+  </head>
+  <body>
+    <div id="head" class="w3-row">
+      <div class="w3-bar w3-col a10">
+        <a href="index.html" class="w3-bar-item w3-button w3-hover-teal">Home</a>
+        <div class="menu">
+          <a href="diritto.html" class="w3-bar-item w3-button w3-hover-teal">Diritto</a>
+          <a href="italiano.html" class="w3-bar-item w3-button w3-hover-teal">Italiano</a>
+          <a href="chimica.html" class="w3-bar-item w3-button w3-hover-teal">Chimica</a>
+          <a href="biologia.html" class="w3-bar-item w3-button w3-hover-teal">Biologia</a>
+          <a class="w3-bar-item w3-button w3-hover-teal w3-teal">Inglese</a>
+          <a href="tecnologia.html" class="w3-bar-item w3-button w3-hover-teal">Tecnologia</a>
+        </div>
+      </div>
+      <div class="w3-col a2">
+        <div class="hamburgher w3-right" onclick="menu()">
+          <span class="f"></span>
+          <span class="s"></span>
+          <span class="t"></span>
+        </div>
+      </div>
+    </div>
+    <div id="body">
+      <select id="language">
+        <option value="eng">English</option>
+        <option value="ita" selected>Italiano</option>
+      </select>
+      <header class="bgimg w3-display-container" id="home">
+        <div class="w3-display-middle w3-center">
+          <span class="w3-text-white mobile-small" style="font-size:90px">L'isola di Plastica</span>
+        </div>
+      </header>
+      <div class="w3-container mg-auto" style="max-width:1200px">
+        <h1>Cos'è l'isola di Plastica?</h1>
+        <p>
+          L’isola di Plastica è una raccolta di rifiuti marini situati nel nord dell'Oceano Pacifico. I detriti più densi possono affondare sotto la superficie (si stima all’incirca il 70%), rendendo l'area quasi impossibile da misurare. La sua superficie stimata è di circa 1,6 milioni di km<sup>2</sup>, un'area tre volte più grande della Francia. Al centro di un vortice, l’acqua è calma, questo intrappola i rifiuti, non permettendogli di uscire.<br>
+          L’ “isola” è stata scoperta da Charles Moore mentre stava navigando dalle Hawaii alla California, dopo aver gareggiato in una gara di vela. Attraversando il Pacifico, lui e il suo equipaggio notarono milioni di pezzi di plastica che circondavano la sua nave.<br>
+          La maggior parte dei detriti provengono dalla plastica e da fonti terrestri, il resto proveniva da imbarcazioni e altre fonti marine. Grazie al sole, la plastica non si biodegrada semplicemente, si rompe in pezzi sempre più piccoli, un processo noto anche come fotodegradazione.
+        </p>
+        <h1>Fa male alla vita marina?</h1>
+        <div class="w3-row flex">
+          <div class="w3-third w3-padding w3-col s12 m6 l4">
+            <div class="w3-card-4 flex-height blur-container">
+              <div class="card-img bg-1 blur-max" id="sensibile-blur"></div>
+              <div id="sensibile-alert" class="blur-content sensible-content">
+                <i class="fa fa-eye-slash fa-2x" aria-hidden="true"></i>
+                <p>Contenuti sensibili</p>
+                <button class="w3-button" id="sensibile-button">Vedi foto</button>
+              </div>
+              <div class="w3-container">
+                <p>Gli albatros scambiano i pezzi di plastica per uova di pesce e li danno in pasto ai pulcini, che moriranno di fame o di organi lacerati.</p>
+              </div>
+            </div>
+          </div>
+          <div class="w3-third w3-padding w3-col s12 m6 l4">
+            <div class="w3-card-4 flex-height">
+              <div class="card-img bg-2"></div>
+              <div class="w3-container">
+                <p>Le tartarughe scambiano la consistenza gelatinosa della plastica per una medusa, il loro cibo preferito. Possono anche essere facilmente impigliate in reti da pesca.</p>
+              </div>
+            </div>
+          </div>
+          <div class="w3-third w3-padding w3-col s12 m6 l4">
+            <div class="w3-card-4 flex-height">
+              <div class="card-img bg-3"></div>
+              <div class="w3-container">
+                <p>L'impatto maggiore sulla vita marina è il fenomeno della "pesca fantasma". Questo accade quando reti a basso costo (Perché sono fatti da plastica) scartate, continuano a "catturare" mammiferi marini, come questa foca Monaca Hawaiana.</p>
+              </div>
+            </div>
+          </div>
+          <div class="w3-third w3-padding w3-col s12 m6 l6 mg-auto">
+            <div class="w3-card-4 flex-height">
+              <div class="card-img bg-4"></div>
+              <div class="w3-container">
+                <p>I detriti marini possono impedire alle alghe e ai plancton di ricevere abbastanza luce solare per creare nutrienti. Quando questo predatore alla base della catena alimentare è minacciato, tutta la catena è in pericolo.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h1>È possibile ripulire l'isola di plastica?</h1>
+        <p>A causa dalla distanza dell'"isola" da qualsiasi paese, nessuno si vuole assumere la responsabilità o fornire qualsiasi sostegno economico per pulirlo.</p>
+        <div class="w3-panel w3-leftbar w3-border-blue bgop-medium citazione">
+          <span>❝</span>
+          <p class="w3-large margin"><i>“Ripulire il l'isola di plastica manderebbe in bancarotta qualsiasi paese che ci ha provato.”</i></p>
+          <p>Charles Moore</p>
+        </div>
+        <p>È più grande di quanto pensi. Il "Marine Debris Program" ha stimato che ci bisognerebbe invare 67 navi l'anno per ripulire meno dell'uno per cento dell'Oceano Pacifico settentrionale.</p>
+        <h1>Cosa possiamo fare?</h1>
+        <ul>
+          <li>Preferisci la bioplastica</li>
+          <li>Smetti di usare la plastica</li>
+          <li>Non lasciare che la plastica vada nel mare</li>
+          <li>Partecipa alle pulizie locali nella tua zona</li>
+          <li>Riutilizza gli oggetti quando possibile</li>
+          <li>Non usare oggetti usa e getta</li>
+        </ul>
+        <h1>Tu lo vuoi questo cambiamento?</h1>
+        <a href="https://www.wwf.it/cosa-puoi-fare-tu/eventi/missionespiaggepulite/" target="_blank" class="w3-row">
+          <p class="w3-container w3-padding w3-green w3-half underline nomargin">Si</p>
+          <p class="w3-container w3-padding w3-red w3-half underline nomargin">No</p>
+        </a>
+        <br>
+      </div>
+    </div>
+  </body>
+  <script src="src/inglese.js"></script>
+</html>

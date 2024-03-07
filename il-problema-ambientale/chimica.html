@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Le Bioplastiche</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="src/style.css">
+    <script src="src/index.js"></script>
+    <link rel="icon" type="image/x-icon" href="src/favicon.ico">
+    <style>
+      body, #body, html{
+        height: 100%;
+        background-color: #e6dfd6;
+      }
+      .bgimg {
+        background-position: center;
+        background-size: cover;
+        background-image: url("https://www.unicusano.it/blog/wp-content/uploads/2018/03/chimici-famosi.jpg");
+        min-height: 70%;
+      }
+      .bgimg::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.5);
+      }
+      @media screen and (max-width: 600px){
+        .mobile-small{
+          font-size: 50px!important
+        }
+      }
+      .bgimg::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.3);
+      }
+      
+      body{padding:0px; margin:0px;}
+      .sections {width:100% ; height:800px ;text-align:center}
+
+      .miostile {
+        background-color: #e6dfd6;
+        max-width:1200px;
+        margin: auto
+      }
+      .footer {
+      padding: top 13000px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="head" class="w3-row">
+      <div class="w3-bar w3-col a10">
+        <a href="index.html" class="w3-bar-item w3-button w3-hover-teal">Home</a>
+        <div class="menu">
+          <a href="diritto.html" class="w3-bar-item w3-button w3-hover-teal">Diritto</a>
+          <a href="italiano.html" class="w3-bar-item w3-button w3-hover-teal">Italiano</a>
+          <a href="chimica.html" class="w3-bar-item w3-button w3-hover-teal w3-teal">Chimica</a>
+          <a href="biologia.html" class="w3-bar-item w3-button w3-hover-teal">Biologia</a>
+          <a href="inglese.html" class="w3-bar-item w3-button w3-hover-teal">Inglese</a>
+          <a href="tecnologia.html" class="w3-bar-item w3-button w3-hover-teal">Tecnologia</a>
+        </div>
+      </div>
+      <div class="w3-col a2">
+        <div class="hamburgher w3-right" onclick="menu()">
+          <span class="f"></span>
+          <span class="s"></span>
+          <span class="t"></span>
+        </div>
+      </div>
+    </div>
+    <div id="body">
+      <!-- Header with image -->
+      <header class="bgimg w3-display-container" id="home">
+        <div class="w3-display-middle w3-center">
+          <span class="w3-text-white mobile-small" style="font-size:90px">Le<br>Bioplastiche</span>
+        </div>
+      </header>
+      <div class="miostile">
+        <div class="w3-container" id="about">
+          <div id="section1" class="sections flex">
+            <div class="sections_indoor">
+            <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">COSA SONO</span></h5>
+            <p> Le Bioplastiche: sono quei materiali (polimeri) e/o manufatti che hanno la caratteristica di essere compostabili e/o biodegradabili. Le bioplastiche possono avere origine sia da fonti rinnovabili (es: origine vegetale o animale, sottoprodotti e scarti di produzione). </p>
+            <p>Inoltre è un tipo di plastica che si può ottenere usando l'amido vegetale, la gelatina o l'agar. Pertanto, è un materiale che non inquina perché non è un derivato del petrolio.</p>
+            </div>
+            <div class="w3-panel w3-leftbar w3-light-grey">
+              <p><i>"E' stato assegnato il riconoscimento internazionale nella categoria "Piccole e Medie Imprese" per una serie di brevetti depositati tra il 1992 e il 2001, che hanno consentito lo sviluppo e l'introduzione delle prime bioplastiche sul mercato.</i></p>
+              <p> Inventore europeo dell'anno: Catia Bastioli</p>
+            </div>
+            <br>
+            <br> 
+            <img src="src/img/bottiglia-bioplastica.png" style="width:100%;max-width:1000px" class="w3-margin-top">
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="w3-container w3-content w3-center w3-padding-64" id="band">
+              <div id="section2" class="sections flex">
+                <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">OGGETTI IN BIOPLASTICA</span></h5>
+                <p class="w3-opacity"><i>Aiutiamo il futuro</i></p>
+                <p class="w3-justify">Packaging alimentare ma anche borracce, borse, cover per smartphone, tessuti, suole per scarpe e oggetti di impiego quotidiano: cinture, bottiglie, orologi, penne, bicchieri, cannucce, piatti e posate monouso.
+                <br>
+                <br>
+                Qualsiasi oggetto realizzato con le attuali plastiche sintetiche può essere riprodotto con bioplastiche che generalmente sono più rispettose dell’ambiente in termini energetici (durante la filiera produttiva) e sicuramente più sostenibili quando si parla di smaltimento.
+                <br>
+                <br>
+                Il settore delle bioplastiche è in piena espansione. Come premesso, tutti gli oggetti che si possono produrre con la plastica convenzione possono poi essere riprodotti con le bioplastiche. Sono stati sviluppati innovativi polimeri reticolabili ed espandibili che consentono di ottenere oggetti super-leggeri con ottime caratteristiche fisico-meccaniche, si tratta di polimeri organici (bioplastica) che possono essere ampiamente utilizzati per la produzione di calzatura sportive.</p>
+                <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">VANTAGGI DELLE BIOPLASTICHE</span></h5>
+                <p>
+                Le bioplastiche hanno un minor impatto ambientale in quanto vengono più facilmente (e rapidamente) riassorbite dall’ambiente riducendo così l’inquinamento e l’impatto sull’ecosistema.
+                <br>
+                <br>
+                Le bioplastiche sono prodotte a partire da fonti rinnovabili: esse infatti sono prodotte a partire dalla materia organica vegetale e questo fa sì che non vi siano problemi di esaurimento delle materie prime, oltre a ridurre l’utilizzo di materiali fossili e le emissioni di gas serra.
+                <br>
+                <br>
+                L’utilizzo di materia prima organica può essere di stimolo alle attività agricole combattendo così l’eccessiva urbanizzazione delle aree rurali.
+                <br>
+                <br>
+                Le bioplastiche biodegradabili inoltre forniscono un’alternativa per lo smaltimento dei prodotti, riducendo così il volume dei rifiuti
+                </p>
+                <img src="src/img/latte.jpg" style="width:70%; max-width:1000px" class="w3-margin-top">
+                <br>
+                <br>
+                <br>
+                <br>
+              </div>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+.flex-height{
+    min-height: 100%;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-img{
+    width: 100%;
+    aspect-ratio: 1920/1080;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}

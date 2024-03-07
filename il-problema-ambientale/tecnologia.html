@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sviluppo sostenibile e mobilità</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="src/style.css">
+    <script src="src/index.js"></script>
+    <link rel="icon" type="image/x-icon" href="src/favicon.ico">
+    <style>
+      body, #body, html{
+        height: 100%;
+      }
+      .bgimg {
+        background-position: center;
+        background-size: cover;
+        background-image: url("src/img/bg-tecnica.png");
+        min-height: 70%;
+      }
+      .bgimg::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.5);
+      }
+      @media screen and (max-width: 600px){
+        .mobile-small{
+          font-size: 50px!important
+        }
+      }
+      .body{
+        margin: auto;
+        max-width: 1200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="head" class="w3-row">
+      <div class="w3-bar w3-col a10">
+        <a href="index.html" class="w3-bar-item w3-button w3-hover-teal">Home</a>
+        <div class="menu">
+          <a href="diritto.html" class="w3-bar-item w3-button w3-hover-teal">Diritto</a>
+          <a href="italiano.html" class="w3-bar-item w3-button w3-hover-teal">Italiano</a>
+          <a href="chimica.html" class="w3-bar-item w3-button w3-hover-teal">Chimica</a>
+          <a href="biologia.html" class="w3-bar-item w3-button w3-hover-teal">Biologia</a>
+          <a href="inglese.html" class="w3-bar-item w3-button w3-hover-teal">Inglese</a>
+          <a href="tecnologia.html" class="w3-bar-item w3-button w3-hover-teal w3-teal">Tecnologia</a>
+        </div>
+      </div>
+      <div class="w3-col a2">
+        <div class="hamburgher w3-right" onclick="menu()">
+          <span class="f"></span>
+          <span class="s"></span>
+          <span class="t"></span>
+        </div>
+      </div>
+    </div>
+    <div id="body">
+      <!-- Header with image -->
+      <header class="bgimg w3-display-container" id="home">
+        <div class="w3-display-middle w3-center">
+          <span class="w3-text-white mobile-small" style="font-size:90px">Sviluppo sostenibile e mobilità</span>
+        </div>
+        <div class="w3-display-bottomright w3-center w3-padding-large">
+          <span class="w3-text-white">Agenda 20-30</span>
+        </div>
+      </header>
+      <div>
+        <!-- About Container -->
+      <div class="w3-container" id="about">
+        <div class="w3-content">
+          <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">COSA CAUSA IL TRAFFICO VEICOLARE?</span></h5>
+          <ul>
+          <li>forme di inquinamento.</li>
+          <li>qualità urbana.</li>
+          <li>tempi di spostamento.</li>
+          <li>costi impliciti ed espliciti.</li>
+          <li>varie forme di rischio e stress per gli utenti della strada.</li>
+          </p>
+          <div class="w3-panel w3-leftbar w3-light-grey">
+            <p><i>Uno degli obiettivi del TPL è promuovere la risorsa del trasporto pubblico.</i></p>
+          </div>
+          <img src="https://s3.eu-central-1.amazonaws.com/it.tplfvg.media/static/home/img/tpl-scuro.png" style="width:100%;max-width:1000px" class="w3-margin-top">
+        </div>
+      </div>
+
+  <!-- About Container -->
+      <div class="w3-container" id="about">
+        <div class="w3-content">
+          <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">MOBILITA' SOSTENIBILE A ROVIGO</span></h5>
+          <p>Rovigo ha un diametro di appena 4 km una dimensione ideale per muoversi in bici!</p>
+          <br>Che mezzo posso utilizzare per spostarmi?</br>
+          <ul>
+          <li>Mezzi pubblici urbani ed extraurbani.</li>
+          <li>La bici.</li>
+          <li>Monopattino elettrico.</li>
+          <li>Treno.</li>
+          <li>Macchina elettrica.</li>
+          <li>A piedi.</li>
+          <div class="w3-panel w3-leftbar w3-light-grey">
+            <p><i>«La mobilità sostenibile è quella pratica che mira a promuovere quel tipo di mobilità, di persone o cose, che abbia un basso impatto ambientale»</i></p>
+          </div>
+          <img src="https://www.rinnovabili.it/wp-content/uploads/2022/01/WhatsApp-Image-2022-01-11-at-13.33.22.jpeg" style="width:100%;max-width:1000px" class="w3-margin-top">
+          <img src="src/img/rinnovabili-fossili.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+        </div>
+      </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,103 @@
+body, #body, html{
+    height: 100%;
+}
+.bgimg {
+    background-position: center;
+    background-size: cover;
+    background-image: url("img/bg-inglese.jpg");
+    min-height: 70%;
+}
+.bgimg::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+@media screen and (max-width: 600px){
+    .mobile-small{
+        font-size: 50px!important
+    }
+}
+
+.bg-1{
+    background-image: url("img/albatross.jpg");
+}
+.bg-2{
+    background-image: url("img/turtle.jpg");
+}
+.bg-3{
+    background-image: url("img/seal.jpg");
+}
+.mg-auto{
+    margin: auto
+}
+.bg-4{
+    background-image: url("img/marine-debris.jpg");
+}
+.underline{
+    text-decoration: underline;
+}
+
+#language{
+    position: fixed;
+    top: 37px;
+    right: 0;
+    z-index: 1;
+    border: none;
+    background-color: rgb(230, 223, 214);
+}
+
+.flex-height{
+    min-height: 100%;
+  }
+  .flex{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card-img{
+    width: 100%;
+    aspect-ratio: 1920/1080;
+    /* Ciò che Forza le proporzioni a 1920 di larghezza e 1080 di altezza */
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+select, option{
+    padding: 4px 6px;
+}
+select{
+    border-bottom-left-radius: 10px;
+}
+
+.nomargin{
+    margin: 0!important
+}
+.sensible-content{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    margin-top:10%
+}
+.sensible-content *{
+    text-align: center;
+}
+.sensible-content p{
+    font-weight: 700;
+}
+
+.blur-max{
+    filter: blur(6px);
+    -webkit-filter: blur(6px);
+}
+
+.blur-content {
+    position: absolute;
+    top: 0
+}
+.blur-container{
+    position: relative;
+}

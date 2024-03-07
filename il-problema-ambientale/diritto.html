@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Un malato immaginario</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="src/style.css">
+    <script src="src/index.js"></script>
+    <link rel="icon" type="image/x-icon" href="src/favicon.ico">
+    <style>
+      body, #body, html{
+        height: 100%;
+      }
+      .bgimg {
+        background-position: center;
+        background-size: cover;
+        background-image: url("src/img/bg-img-dirito.jpg");
+        min-height: 70%;
+      }
+      .bgimg::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.5);
+      }
+      .miostile {
+      font-family: "Inconsolata", sans-serif;
+      text-align:center
+      }
+      img{
+        width: 100%;
+        max-width:500px;
+        display: block;
+      }
+      button{
+        display: block;
+      }
+      @media screen and (max-width: 600px){
+        .mobile-small{
+          font-size: 50px!important
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="head" class="w3-row">
+      <div class="w3-bar w3-col a10">
+        <a href="index.html" class="w3-bar-item w3-button w3-hover-teal">Home</a>
+        <div class="menu">
+          <a class="w3-bar-item w3-button w3-hover-teal w3-teal">Diritto</a>
+          <a href="italiano.html" class="w3-bar-item w3-button w3-hover-teal">Italiano</a>
+          <a href="chimica.html" class="w3-bar-item w3-button w3-hover-teal">Chimica</a>
+          <a href="biologia.html" class="w3-bar-item w3-button w3-hover-teal">Biologia</a>
+          <a href="inglese.html" class="w3-bar-item w3-button w3-hover-teal">Inglese</a>
+          <a href="tecnologia.html" class="w3-bar-item w3-button w3-hover-teal">Tecnologia</a>
+        </div>
+      </div>
+      <div class="w3-col a2">
+        <div class="hamburgher w3-right" onclick="menu()">
+          <span class="f"></span>
+          <span class="s"></span>
+          <span class="t"></span>
+        </div>
+      </div>
+    </div>
+    <div id="body">
+      <!-- Header with image -->
+      <header class="bgimg w3-display-container" id="home">
+        <div class="w3-display-middle w3-center">
+          <span class="w3-text-white mobile-small" style="font-size:90px">L'ambiente un malato<br>immaginario</span>
+        </div>
+      </header>
+      <!-- About Container -->
+      <div class="w3-container">
+        <div class="w3-content" style="max-width:1200px">
+          <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Spiegazione dell'attività</span></h5>
+          <p>Per questa UDA che ha come protagonista l'ambiente e le sue problematiche, in diritto siamo andati a inscenare un processo composto da:</p>
+          <ul>
+            <li> DIFESA </li>
+            <li> ACCUSA </li>
+            <li> GIUDICI </li>
+          </ul>
+          <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">Da dove abbiamo preso le informazioni?</span></h5>
+          <hr>
+          <h5 class="miostile">CONTRO LA TRANSIZIONE ECOLOGICA (ACCUSA)</h5>
+          <div class="cc">
+            <img src="src/img/lampadina-green.avif">
+            <br>
+            <br>
+            <p> <strong>Le compagnie fossili bloccano la transizione ecologica </strong> </p> 
+            <a href="https://www.repubblica.it/solidarieta/emergenza/2020/01/22/news/ambiente_le_compagnie_fossili_bloccano_la_transizione_ecologica_giudici_sovranazionali_a_disposizione_del_settore_privat-246390667/"><button style="font-size:24px">Approfondimento <i class="fa fa-file"></i></button></a>
+            <p> <strong> Senza regole più snelle, la transizione non parte </strong> </p>
+            <a href="https://www.huffingtonpost.it/entry/senza-regole-piu-snelle-la-transizione-ecologica-non-parte-di-a-cianciullo_it_602a2d92c5b6d667582e1cc3/"><button style="font-size:24px">Approfondimento <i class="fa fa-file"></i></button></a>
+            <p> <strong> La sostenibilità piace, se i prezzi dei prodotti non aumentano </strong> </p>
+            <a href="https://www.ilsole24ore.com/art/la-sostenibilita-piace-ma-solo-se-prezzi-prodotti-non-aumentano-AEoVaFj"><button style="font-size:24px">Approfondimento <i class="fa fa-file"></i></button></a>
+            <p><strong> I tempi e costi delle imprese </p></strong>	
+            <a href="https://www.festivalcittaimpresa.it/transizione-ecologica-le-imprese-unopportunita-ma-tempi-e-costi-sono-un-limite/"><button style="font-size:24px">Approfondimento <i class="fa fa-file"></i></button></a>
+            <br>
+            <iframe src="https://docs.google.com/presentation/d/1thAySRim2iD_Vx-YaQL1D-Y-UcCcZ023/preview?slide=id.p1" style="width:100%;aspect-ratio:1920/1080">Non posso riprodurre la presentazione. Perfavore aggiorna il browser!</iframe>
+			      <br>
+            <br>
+            <hr>
+            <h5 class="miostile"> I VANTAGGI DELLA TRANSIZIONE ECOLOGICA (DIFESA) </h5>
+            <br>
+            <img src="src/img/lampadina_ecologica.jpg">
+            <br>
+            <p> <strong> I cinque punti chiave della transizione ecologica </strong> </p>
+            <a href="https://www.greenpeace.org/italy/storia/13110/ecco-i-cinque-punti-chiave-della-transizione-ecologica/"> <button style="font-size:24px">Approfondimento <i class="fa fa-file"></i></button></a>
+            <br>
+            <p> <strong> L'importanza della transizione ecologica nel nostro paese </strong></p>
+            <a href="https://www.itstec.it/blog/248-transizione-ecologica-la-sua-importanza-per-il-nostro-futuro.html"> <button style="font-size:24px">Approfondimento <i class="fa fa-file"></i></button></a>
+			      <br>
+            <p> <strong> Sito governativo </strong> </p>
+            <a href="https://www.mite.gov.it/"> <button style="font-size:24px">Approfondimento <i class="fa fa-file"></i></button></a>
+            <br>
+            <p> <strong> transizione verde </strong></p>
+            <a href="https://ec.europa.eu/reform-support/what-we-do/green-transition_it"> <button style="font-size:24px">Approfondimento <i class="fa fa-file"> </i></button></a>
+            <br>
+            <iframe src="https://docs.google.com/presentation/d/11LXPSLKBeF-xXXRMjJ94HsNT4UfYo350/preview?slide=id.p1" style="width:100%;aspect-ratio:1920/1080">Non posso riprodurre la presentazione. Perfavore aggiorna il browser!</iframe>
+            <h5 class="w3-center w3-padding-32"><span class="w3-tag w3-wide">La sentenza dai giudici</span></h5>
+            <br>
+            <iframe src="https://docs.google.com/presentation/d/1EU9gYL_psxUV1_DA0EKlFtBD57wGgMkc/preview?slide=id.p1" style="width:100%;aspect-ratio:1920/1080">Non posso riprodurre la presentazione. Perfavore aggiorna il browser!</iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

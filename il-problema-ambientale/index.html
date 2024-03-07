@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Il Problema Ambientale</title>
+        <script src="src/index.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="src/style.css">
+        <link rel="stylesheet" href="src/index.css">
+        <script src="https://climateclock.world/widget-v2.js" async></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" type="image/x-icon" href="src/favicon.ico">
+    </head>
+    <body>
+        <div id="head" class="w3-row">
+            <div class="w3-bar w3-col a10">
+                <a class="w3-bar-item w3-button w3-teal w3-hover-teal">Home</a>
+                <div class="menu">
+                    <a href="diritto.html" class="w3-bar-item w3-button w3-hover-teal">Diritto</a>
+                    <a href="italiano.html" class="w3-bar-item w3-button w3-hover-teal">Italiano</a>
+                    <a href="chimica.html" class="w3-bar-item w3-button w3-hover-teal">Chimica</a>
+                    <a href="biologia.html" class="w3-bar-item w3-button w3-hover-teal">Biologia</a>
+                    <a href="inglese.html" class="w3-bar-item w3-button w3-hover-teal">Inglese</a>
+                    <a href="tecnologia.html" class="w3-bar-item w3-button w3-hover-teal">Tecnologia</a>
+                </div>
+            </div>
+            <div class="w3-col a2">
+                <div class="hamburgher w3-right" onclick="menu()">
+                    <span class="f"></span>
+                    <span class="s"></span>
+                    <span class="t"></span>
+                </div>
+            </div>
+        </div>
+        <div id="body">
+            <div class="bgimg"></div>
+            <div class="top w3-container">
+                <div class="big">
+                    <h1 class="w3-center">L'ambiente sta soffrendo</h1>
+                    <h4 class="w3-center">Chi siamo?</h4>
+                    <div>
+                        Siamo la classe 2E dell'ITIS Viola Marchesini di Rovigo. Quest'anno con i nostri professori abbiamo deciso di affrontare il problema del cambiamento climatico.
+                        Abbiamo svolto il nostro lavoro a gruppi e questo è il nostro:
+                        <ul class="w3-ul">
+                            <li>Matteo Fuso</li>
+                            <li>Bernardinello Tommaso</li>
+                            <li>Rondina Cristian</li>
+                            <li>Sofia Rigon</li>
+                        </ul>
+                    </div>
+                    <h4 class="w3-center">Come ci muoveremo?</h4>
+                    <p>
+                        In ogni materia abbiamo approfondito l'argomento, come si può vedere dal numero di schede. In particolare:
+                        <ul class="w3-ul">
+                            <li>In <a href="italiano.html">italiano</a> abbiamo fatto un testo teatrale</li>
+                            <li>In <a href="diritto.html">diritto</a> abbiamo inscenato un processo</li>
+                            <li>In <a href="chimica.html">chimica</a> abbiamo creato una Bioplastica</li>
+                            <li>In <a href="biologia.html">biologia</a> abbiamo approfondito il nucleare e le energie pulite</li>
+                            <li>In <a href="inglese.html">inglese</a> abbiamo parlato dell'isola di plastica</li>
+                            <li>In <a href="tecnologia.html">tecnologia</a> abbiamo affrontato la mobilità sostenibile</li>
+                        </ul>
+                    </p>
+                    <h4 class="w3-center">Cos'è il surriscaldamento globale?</h4>
+                    <p>
+                        Il problema ambientale tratta di svariati problemi sorti a causa dell'uomo sulla Terra. Tutto sorge dall'effetto serra, che è causato dalla sovraemmisione di CO<sub>2</sub>. 
+                        Questo ha portato molte cause negative, le più famose sono il peggioramento della qualità dell'aria e il surriscaldamento globale.
+                        Fino ad oggi la temperatura è aumentata di 1,1 °C rispetto all'era preindustriale. Questo ha portato all'alzamento dei livelli del mare. Pensate alle povere persone che vivono a Venezia che cosa si subiranno.
+                    </p>
+                    <h4 class="w3-center">Ma ho letto che non esiste!</h4>
+                    <p>In classe abbiamo imparato anche a filtrare le informazioni. Questo lo dovrebbero insegnare a tutti, voi negazionisti compresi. Se non impariamo filtrarle da subito, rischiamo di "uccidere" il nostro paese (In questo caso). Che ne dici di fare un gioco per metterti alla prova (Clicca sulla risposta esatta). Secondo te è più affidabile un informazione data da:</p>
+                    <div class="question w3-row" correct="1">
+                        <span class="w3-half w3-container w3-padding w3-btn" chose="0"><i class="fa fa-circle-o" aria-hidden="true"></i> Uno che espone le sue idee</span>
+                        <span class="w3-half w3-container w3-padding w3-btn" chose="1"><i class="fa fa-circle-o" aria-hidden="true"></i> Uno che espone dati scientifici</span>
+                    </div>
+                    <p>Ma se non esponesse dati, con chi saresti più sicuro di ricevere una giusta informazione?</p>
+                    <div class="question w3-row" correct="0">
+                        <span class="w3-half w3-container w3-padding w3-btn" chose="0"><i class="fa fa-circle-o" aria-hidden="true"></i> Uno che ha preso un Nobel in materia</span>
+                        <span class="w3-half w3-container w3-padding w3-btn" chose="1"><i class="fa fa-circle-o" aria-hidden="true"></i> Il tuo professore o un adulto</span>
+                    </div>
+                    <h1 class="w3-center">Quanto manca?</h1>
+                    <p>
+                        Grazie al team di Climate clock, abbiamo un dato. Tutto è iniziato quando Greta Thunberg ha chiesto un timer che esprima quanto manchi all'alzamento delle temperature di 1,5 °C. Può sembrare poco, ma non è così. Pensate che con all'aumento di 2 °C potrebbero morire praticamente tutti i coralli.
+                        Questi orologi si possono trovare in molti posti, a partire da New York, a Glasgow, fino alla sede del ministero della transizione ecologica, in Italia.
+                        Se credi di più a "La stampa", guarda questo video:
+                    </p>
+                    <iframe src="https://www.youtube-nocookie.com/embed/I4WGX_xWmUo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>Il tuo browser non supporta gli Iframe, perfavora aggiorna il browser!</iframe>
+                    <div class="w3-panel w3-leftbar w3-border-blue bgop-medium citazione">
+                        <span>❝</span>
+                        <p class="w3-large margin"><i>“L'unico motivo per cui il riscaldamento globale sembra inarrestabile è che non abbiamo ancora provato a fermarlo.”</i></p>
+                        <p>Gregg Easterbrook</p>
+                        <!-- https://bit.ly/3jlJHwH -->
+                    </div>
+                    <p>
+                        Se gli chicchi sopra, ti porterà al sito ufficiale. Da lì potrai fare delle simulazioni (Cliccando nuovamente sull'orologio): dandogli la quantità dell'investimento e la velocità delle azioni, otterrai un grafico con la previsione di aumento di temperatura, negli anni.
+                    </p>
+                    <climate-clock></climate-clock>
+                </div>
+            </div>
+        </div>
+    </body> 
+</html>

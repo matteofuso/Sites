@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fonti rinnovabili</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="src/style.css">
+    <script src="src/index.js"></script>
+    <link rel="icon" type="image/x-icon" href="src/favicon.ico">
+    <style>
+      body, #body, html{
+        height: 100%;
+      }
+      .bgimg {
+        background-position: center;
+        background-size: cover;
+        background-image: url("src/img/bg-img-biologia.jpg");
+        min-height: 70%;
+      }
+      .bgimg::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.5);
+      }
+      @media screen and (max-width: 600px){
+        .mobile-small{
+          font-size: 50px!important
+        }
+      }
+      .body{
+        margin: auto;
+        max-width: 1200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="head" class="w3-row">
+      <div class="w3-bar w3-col a10">
+        <a href="index.html" class="w3-bar-item w3-button w3-hover-teal">Home</a>
+        <div class="menu">
+          <a href="diritto.html" class="w3-bar-item w3-button w3-hover-teal">Diritto</a>
+          <a href="italiano.html" class="w3-bar-item w3-button w3-hover-teal">Italiano</a>
+          <a href="chimica.html" class="w3-bar-item w3-button w3-hover-teal">Chimica</a>
+          <a href="biologia.html" class="w3-bar-item w3-button w3-hover-teal w3-teal">Biologia</a>
+          <a href="inglese.html" class="w3-bar-item w3-button w3-hover-teal">Inglese</a>
+          <a href="tecnologia.html" class="w3-bar-item w3-button w3-hover-teal">Tecnologia</a>
+        </div>
+      </div>
+      <div class="w3-col a2">
+        <div class="hamburgher w3-right" onclick="menu()">
+          <span class="f"></span>
+          <span class="s"></span>
+          <span class="t"></span>
+        </div>
+      </div>
+    </div>
+    <div id="body">
+      <!-- Header with image -->
+      <header class="bgimg w3-display-container" id="home">
+        <div class="w3-display-middle w3-center">
+          <span class="w3-text-white mobile-small" style="font-size:90px">L'ambiente un malato<br>immaginario</span>
+        </div>
+        <div class="w3-display-bottomright w3-center w3-padding-large">
+          <span class="w3-text-white">Agenda 20-30</span>
+        </div>
+      </header>
+      <div class="body">
+        <!-- About Container -->
+      <div class="w3-container" id="about">
+        <div class="w3-content">
+          <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">COSA SONO LE FONTI RINNOVABILI?</span></h5>
+        </p>Il biogas è un gas naturale prodotto dalla decomposizione di rifiuti organici.</p>
+        <p>L’energia da biomasse è una forma di energia solare indiretta che può essere prodotta da materiale organici vegetali quali: legno, piante erbacee ed acquatiche , residui forestali , residui agricoli e industriali e rifiuti urbani.
+        I processi di trasformazione prevedono la combustione , la massificazione , la pirolisi (per produrre bio-olio), la fermentazione e la digestione anaerobica (per produrre gas).</p>
+          <div class="w3-panel w3-leftbar w3-light-grey">
+            <p><i>Uno degli obiettivi di sviluppo sostenibile dell’Agenda 2030, l’obiettivo 7, è interamente focalizzato sull’energia pulita e accessibile e mira ad assicurare a tutte le persone l’accesso a sistemi di energia economici, affidabili, sostenibili e moderni.</i></p>
+          </div>
+          <img src="src/img/energia-pulita.png" style="width:100%;max-width:1000px" class="w3-margin-top">
+        </div>
+      </div>
+
+      <!-- Menu Container -->
+      <div class="w3-container" id="menu">
+        <div class="w3-content">
+      
+          <br>
+        
+          <div class="w3-row w3-center w3-card w3-padding">
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+              <div class="w3-col s6 tablink">FONTI RINNOVABILI</div>
+            </a>
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+              <div class="w3-col s6 tablink">FONTI <strong>NON</strong> RINNOVABILI</div>
+            </a>
+          </div>
+
+          <div id="Eat" class="w3-container dn w3-padding-48 w3-card">
+            <h5>Rifiuti organici</h5>
+          <br>
+          
+            <h5>Fuoco</h5>
+            <br>
+          
+            <h5>Legna</h5>
+            <br>
+          
+            <h5>Aria</h5>
+            <br>
+          
+            <h5>Acqua</h5>
+            <br>
+          
+          <h5>Energia geotermica</h5>
+          <br>
+          <iframe src="https://docs.google.com/presentation/d/1Y7jZHo1UYz6zWr3_33G6she-FcYwTaT0/preview?slide=id.p1" style="width: 100%; aspect-ratio: 1920/1080;">Non posso riprodurre la presentazione. Perfavore aggiorna il browser!</iframe>
+          </div>
+
+          <div id="Drinks" class="w3-container dn w3-padding-48 w3-card">
+            <h5>Metano</h5>
+            <br>
+          
+            <h5>Carbone</h5>
+            <br>
+          
+            <h5>Petrolio</h5>
+            <br>
+          
+            <h5>Uranio</h5>
+            <br>
+          
+            <h5>Plutonio</h5>
+            <br>
+          
+          <h5>Energia Nucleare</h5>
+            </div>  
+          <img src="src/img/rinnovabili-fossili.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+        </div>
+      </div>
+
+      <!-- Contact/Area Container -->
+      <div class="w3-container" id="where" style="padding-bottom:32px;">
+        <div class="w3-content">
+          <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">COSA POSSIAMO FARE?</span></h5>
+          <p>Possiamo ridurre le emissioni di gas a effetto serra puntando maggiormente sulle fonti di energia rinnovabile, quali il vento e l’energia solare, che garantiscono una fornitura infinita di energia, diversamente dai combustibili fossili, che prima o poi si esauriranno. Inoltre, diversamente dall’uso dei combustibili fossili nelle centrali, la generazione di elettricità da fonti rinnovabili produce quantità minime o addirittura nulle di gas a effetto serra.</p>
+        </div>
+      </div>
+      <script>
+        // Tabbed Menu
+        function openMenu(evt, menuName) {
+          var i, x, tablinks;
+          x = document.getElementsByClassName("dn ");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablink");
+          for (i = 0; i < x.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+          }
+          document.getElementById(menuName).style.display = "block";
+          evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+        }
+        document.getElementById("myLink").click();
+      </script>
+      </div>
+    </div>
+  </body>
+</html>
