@@ -2,7 +2,7 @@ const header = document.createElement('div');
 header.innerHTML = `<div class="fixed-top">
     <header class="bg-body py-3 border-bottom shadow-lg" data-bs-theme="dark">
         <div class="container d-flex p-2 justify-content-between align-items-center">
-            <a href="/" class="link-body-emphasis d-flex text-decoration-none align-items-center">
+            <a href="./" class="link-body-emphasis d-flex text-decoration-none align-items-center">
                 <i class="bi bi-ethernet mx-3 h2 my-0"></i>
                 <p class="h4 my-0">Socket</p>
             </a>
@@ -52,30 +52,50 @@ header.innerHTML = `<div class="fixed-top">
         <div class="container-fluid">
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav my-3">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Le Socket</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Prima Pagina</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Seconda Pagina</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Glossario</a>
-                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 </div>`;
 
+const pages = [
+    {
+        title: 'Home',
+        link: './'
+    },
+    {
+        title: 'Le Socket',
+        link: 'socket.html'
+    },
+    {
+        title: 'Prima Pagina',
+        link: 'page1'
+    },
+    {
+        title: 'Seconda Pagina',
+        link: 'page2'
+    },
+    {
+        title: 'Glossario',
+        link: 'glossario.html'
+    }
+]
+
 const header_nav_placeholder = document.getElementById('header_nav_placeholder');
 const selected_id = header_nav_placeholder.getAttribute('data-selected-id');
-const selected_nav_item = header.querySelectorAll(`nav a`)[selected_id];
-selected_nav_item.classList.add('active');
-selected_nav_item.setAttribute('aria-current', 'page');
+const navbar = header.querySelector('nav ul');
+pages.forEach((page, index) => {
+    const li = document.createElement('li');
+    li.classList.add('nav-item');
+    const a = document.createElement('a');
+    a.classList.add('nav-link');
+    a.href = page.link;
+    a.textContent = page.title;
+    if (index == selected_id) {
+        a.classList.add('active');
+        a.setAttribute('aria-current', 'page');
+    }
+    li.appendChild(a);
+    navbar.appendChild(li);
+});
 header_nav_placeholder.replaceWith(header.firstChild);

@@ -24,3 +24,9 @@ body
   padding-top: 11rem;
   min-height: 100vh;
 }
+
+@media (max-width: 992px) {
+  body {
+    padding-top: 6rem;
+  }
+}
