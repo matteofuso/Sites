@@ -1,4 +1,4 @@
-const header = document.createElement('div');
+const header = document.createElement("div");
 header.innerHTML = `<div class="fixed-top">
     <header class="bg-body py-3 border-bottom shadow-lg" data-bs-theme="dark">
         <div class="container d-flex p-2 justify-content-between align-items-center">
@@ -59,43 +59,45 @@ header.innerHTML = `<div class="fixed-top">
 </div>`;
 
 const pages = [
-    {
-        title: 'Home',
-        link: './'
-    },
-    {
-        title: 'Le Socket',
-        link: 'socket.html'
-    },
-    {
-        title: 'Prima Pagina',
-        link: 'page1'
-    },
-    {
-        title: 'Seconda Pagina',
-        link: 'page2'
-    },
-    {
-        title: 'Glossario',
-        link: 'glossario.html'
-    }
-]
+  {
+    title: "Home",
+    link: "./",
+  },
+  {
+    title: "Le Socket",
+    link: "socket.html",
+  },
+  {
+    title: "La Pila ISO/OSI",
+    link: "iso-osi.html",
+  },
+  {
+    title: "Architettura Client Server",
+    link: "client-server.html",
+  },
+  {
+    title: "Glossario",
+    link: "glossario.html",
+  },
+];
 
-const header_nav_placeholder = document.getElementById('header_nav_placeholder');
-const selected_id = header_nav_placeholder.getAttribute('data-selected-id');
-const navbar = header.querySelector('nav ul');
+const header_nav_placeholder = document.getElementById(
+  "header_nav_placeholder"
+);
+const selected_id = header_nav_placeholder.getAttribute("data-selected-id");
+const navbar = header.querySelector("nav ul");
 pages.forEach((page, index) => {
-    const li = document.createElement('li');
-    li.classList.add('nav-item');
-    const a = document.createElement('a');
-    a.classList.add('nav-link');
-    a.href = page.link;
-    a.textContent = page.title;
-    if (index == selected_id) {
-        a.classList.add('active');
-        a.setAttribute('aria-current', 'page');
-    }
-    li.appendChild(a);
-    navbar.appendChild(li);
+  const li = document.createElement("li");
+  li.classList.add("nav-item");
+  const a = document.createElement("a");
+  a.classList.add("nav-link");
+  a.href = page.link;
+  a.textContent = page.title;
+  if (index == selected_id) {
+    a.classList.add("active");
+    a.setAttribute("aria-current", "page");
+  }
+  li.appendChild(a);
+  navbar.appendChild(li);
 });
 header_nav_placeholder.replaceWith(header.firstChild);
