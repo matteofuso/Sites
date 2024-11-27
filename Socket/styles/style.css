@@ -38,3 +38,11 @@ body
     top: 6rem;
   }
 }
+
+.inverse-color-filter{
+  filter: invert(1) grayscale(100) !important;
+}
+
+[data-bs-theme=dark] .inverse-color-filter{
+  filter: none !important;
+}

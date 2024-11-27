@@ -13,8 +13,127 @@
 
 <body class="d-flex flex-column">
     <div id="header_nav_placeholder" data-selected-id="2"></div>
-    <main class="container flex-grow-1">
+    <main class="container flex-grow-1 my-4">
+        <h1>La Pila ISO/OSI</h1>
+        <hr>
+        <div>
+            <h3>La struttura a livelli della pila ISO/OSI</h3>
+            <p>
+                Il modello ISO/OSI è uno standard che definisce le basi per le comunicazioni tramite internet.
+                Questo funziona tramite un approccio a livelli, dove ognuno elabora i dati ricevuti da quello precedente
+                e li invia a quello successivo.
+                Questa divisione permette di rendere ogni livello indipendente e più facile da gestire.
+                Lo standard inoltre favorisce inoltre la comunicazione tra dispositivi di produttori diversi, i quali
+                erano soliti a svilupparne uno proprietario.
+            </p>
+        </div>
+        <div class="my-4">
+            <h3>I livelli del modello OSI</h3>
+            <div class="row">
+                <div class="col-12 col-lg-4">
+                    <div class="text-bg-primary mx-2 my-2 px-4 py-3 text-center">
+                        Livello Applicazione
+                    </div>
+                    <div class="text-bg-secondary mx-2 my-2 px-4 py-3 text-center">
+                        Livello Presentazione
+                    </div>
+                    <div class="text-bg-success mx-2 my-2 px-4 py-3 text-center">
+                        Livello Sessione
+                    </div>
+                    <div class="text-bg-danger mx-2 my-2 px-4 py-3 text-center">
+                        Livello Trasporto
+                    </div>
+                    <div class="text-bg-warning mx-2 my-2 px-4 py-3 text-center">
+                        Livello Rete
+                    </div>
+                    <div class="text-bg-info mx-2 my-2 px-4 py-3 text-center">
+                        Livello Collegamento Dati
+                    </div>
+                    <div class="bg-body-tertiary mx-2 my-2 px-4 py-3 text-center">
+                        Livello Fisico
+                    </div>
+                </div>
+                <div class="col-12 col-lg-8">
+                    <div id="carouselExample" class="carousel slide h-100">
+                        <div class="carousel-inner px-5 pt-5">
+                            <div class="carousel-item active">
+                                <h4>Livello Fisico</h4>
+                                <p>
+                                    Il livello fisico è il primo livello della pila e si occupa della trasmissione dei
+                                    dati grezzi attraverso mezzi di comunicazione, come cavi di rame, fibre ottiche o
+                                    onde radio. Oltre a questi fanno parte del primo livello le schede di rete, tutte le
+                                    tecnologie per permettono di modulare o demodulare il segnale ed eventuali gestione
+                                    delle collisioni nei canali bidirezionali.
+                                </p>
+                            </div>
+                            <div class="carousel-item">
+                                <h4>Livello Collegamento Dati</h4>
+                                <p>
+                                    Il livello di collegamento dati si occupa di incapsulare il pacchetto proveniente
+                                    dallo strato superiore in un nuovo pacchetto contenente l’indirizzo MAC sorgente e
+                                    di destinazione, oltre a garantire la corretta ricezione dei pacchetti tramite il
+                                    CRC. Questo livello permette l'invio del pacchetto al corretto destinatario ma solo
+                                    all’interno di una LAN.
+                                </p>
+                            </div>
+                            <div class="carousel-item">
+                                <h4>Livello di Rete</h4>
+                                <p>
+                                    Il livello di rete si occupa dell'instradamento dei pacchetti tra reti diverse.
+                                    Questo permette di inviare pacchetti anche tra dispositivi di reti diverse, tutto
+                                    questo grazie ad un indirizzo IP che individua unicamente un dispositivo tra diverse
+                                    reti. Questo livello si occupa anche della scelta del percorso più breve nella per
+                                    raggiungere una rete esterna
+                                </p>
+                            </div>
+                            <div class="carousel-item">
+                                <h4>Livello di Trasporto</h4>
+                                <p>
+                                    Il livello di trasporto permette la comunicazione tra processi distinti nello stesso dispositivo, grazie alle porte. Senza di queste non ci sarebbe niente a distinguere un pacchetto destinato a un processo rispetto ad un altro. Inoltre definisce due modalità di condivisione, TCP e UDP:
+                                    TCP (Transmission Control Protocol) è un protocollo che garantisce la ricezione corretta ed ordinata dei pacchetti, tramite una sincronizzazione iniziale e finale denominate rispettivamente three way handshake e four way handshake. 
+                                    UDP (User Datagram Protocol) è un protocollo che non garantisce ne la ricezione, ne l’ordine di ricezione. Questo protocollo è utilizzato nelle applicazioni dove è più importante la velocità e non importa se qualche pacchetto viene perso
 
+                                    Le porte prima citate, hanno dimensione 16bit, quindi vanno da 0 a 65535 e sono divise in
+                                    Well Known Ports: Le porte che vanno dalla 0 alla 1023, sono riservate ad applicazioni particolari come HTTP o SSH
+                                    Registered Ports: Le porte cha vanno da 1024 a 49151 sono le cosiddette porte registrate, sono utilizzate da alcuni servizi ma possono anche essere utilizzate dai client
+                                    Private Ports: Le porte che vanno da 49152 a 65535, non hanno un uso specifico e possono essere utilizzare liberamente da tutti i processi
+
+                                    La coppia di indirizzo IP e porta è definita Socket
+                                </p>
+                            </div>
+                            <div class="carousel-item">
+                                <h4>Livello di Sessione</h4>
+                                <p>
+                                    Il livello di sessione fornisce servizi in grado di gestire le sessioni di comunicazione tra processi, come l’apertura, la chiusura e la sincronizzazione.
+                                </p>
+                            </div>
+                            <div class="carousel-item">
+                                <h4>Livello di Presentazione</h4>
+                                <p>
+                                    Il livello di presentazione si occupa di crittografia e rendere visualizzabili i dati ricevuti per l’utente. Un esempio di servizio fornito da questo livello sono tutti i formati di immagini
+                                </p>
+                            </div>
+                            <div class="carousel-item">
+                                <h4>Livello di Applicazione</h4>
+                                <p>
+                                    Il livello di applicazione fornisce l’interfaccia tra l’utente e i dati ricevuti, tramite un programma.
+                                </p>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev w-auto" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon inverse-color-filter" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next w-auto end-0" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon inverse-color-filter" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <div id="footer_placeholder"></div>
     <script src="scripts/loadHeaderNav.js"></script>
