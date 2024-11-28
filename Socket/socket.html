@@ -14,7 +14,178 @@
 <body class="d-flex flex-column">
     <div id="header_nav_placeholder" data-selected-id="1"></div>
     <main class="container flex-grow-1 my-4">
-        
+        <h1>Le Socket</h1>
+        <hr>
+        <div>
+            <h3>Che cos'è una socket?</h3>
+            <div class="row align-items-center">
+                <div class="col-12 col-xl-5">
+                    <img src="images/socket.png" alt="Socket" class="img-fluid rounded my-2">
+                </div>
+                <div class="col-12 col-xl-7">
+                    <p class="mb-2">
+                        Una socket è un'interfaccia software che permette lo scambio di informazioni tra due
+                        applicativi, sia
+                        localmente che remotamente.
+                        Opera principalmente attraverso una rete, ma può essere utilizzato anche con meccanismi di IPC.
+                        Dal punto di vista concettuale, è basato sull’architettura client-server, e utilizza le sue
+                        primitive
+                        per il suo funzionamento.
+                        Le socket sono alla base di molti protocolli, come DNS, HTTP o FTP.<br>
+                        Le socket forniscono un canale di comunicazione bidirezionale, che può essere sincrono a
+                        asincrono e
+                        ognuna è definita tramite la combinazione di tre elementi fondamentali:
+                    </p>
+                    <ul class="mb-2">
+                        <li>Indirizzo IP</li>
+                        <li>Porta</li>
+                        <li>Protocollo</li>
+                    </ul>
+                    <p>
+                        Come vedremo questi elementi sono strettamente legati alla pila ISO/OSI, più specificatamente
+                        nel
+                        livello di trasporto.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="my-4">
+            <h3>Le tipologie di socket</h3>
+            <p>
+                Una socket si può dividere principalmente in due famiglie, dove ognuna riunisce i socket che utilizzano
+                gli stessi protocolli e che supportano uno stile di comunicazione e un formato di indirizzamento.
+                In particolare troviamo:
+            </p>
+            <div class="accordion" id="accordiontipologie">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse-internet-socket" aria-expanded="false"
+                            aria-controls="collapse-internet-socket">
+                            Internet Socket
+                        </button>
+                    </h2>
+                    <div id="collapse-internet-socket" class="accordion-collapse collapse show"
+                        data-bs-parent="#accordiontipologie">
+                        <div class="accordion-body">
+                            <p>
+                                Per internet socket si intende quella famiglia che permette la comunicazione attraverso
+                                una LAN o internet.<br>
+                                Un Internet socket si può dividere principalmente in ulteriori tre tipi, ognuno dei
+                                quali si caratterizza per la modalità di connessione, in particolare possiamo trovare:
+                            </p>
+                            <div class="accordion" id="accordionINET">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapse-stream"
+                                            aria-expanded="true" aria-controls="collapse-stream">
+                                            Stream Socket
+                                        </button>
+                                    </h2>
+                                    <div id="collapse-stream" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionINET">
+                                        <div class="accordion-body">
+                                            Una stream socket è una tipologia di socket basata su TCP che realizza una
+                                            comunicazione tipicamente asimmetrica, affidabile e full-duplex.
+                                            Con questa tipologia viene aperto un canale virtuale di comunicazione
+                                            necessario per la condivisione di informazioni.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapse-datagram"
+                                            aria-expanded="false" aria-controls="collapse-datagram">
+                                            Datagram Socket
+                                        </button>
+                                    </h2>
+                                    <div id="collapse-datagram" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionINET">
+                                        <div class="accordion-body">
+                                            Una datagram socket è una tipologia di socket basata su UDP che non
+                                            necessita della creazione di una connessione, per questo è più veloce ma
+                                            meno affidabile, inoltre è possibile agire in multicast.
+                                            I dati sono inviati in pacchetti chiamati datagrammi.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapse-raw"
+                                            aria-expanded="false" aria-controls="collapse-raw">
+                                            Raw Socket
+                                        </button>
+                                    </h2>
+                                    <div id="collapse-raw" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionINET">
+                                        <div class="accordion-body">
+                                            Le raw socket sono una tipologia di socket che permettono di saltare i
+                                            protocolli di trasporto come TCP e UDP, dando la possibilità di operare
+                                            direttamente a livello IP.
+                                            Sono utilizzati principalmente per lo sviluppo di protocolli di rete
+                                            personalizzati.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseUNIX" aria-expanded="false" aria-controls="collapseUNIX">
+                            UNIX Domain Socket
+                        </button>
+                    </h2>
+                    <div id="collapseUNIX" class="accordion-collapse collapse" data-bs-parent="#accordiontipologie">
+                        <div class="accordion-body">
+                            Per unix domain socket si intende quella famiglia che permette il trasferimento di dati tra
+                            processi sulla stessa macchina unix.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h3>Il processo di comunicazione</h3>
+            <p>
+                Il processo di comunicazione tra programmi attraverso le socket utilizza la logica dell’architettura
+                client-server, in particolare possiamo individuare le seguenti fasi, divise tra i due attori:
+            </p>
+            <ul>
+                <li>
+                    <p><strong>Server</strong></p>
+                    <ol>
+                        <li>Il server crea una socket internet e lega a questa la porta nella quale vuole essere
+                            raggiunto, insieme ad un indirizzo IP, il quale permette di limitare la superficie da dove
+                            può essere raggiunta</li>
+                        <li>Il server si mette ora in ascolto per le richieste di connessione dei client, tramite il
+                            ciclo principale del programma</li>
+                        <li>Il server appena riceve una richiesta, la accetta e stabilisce una connessione dedicata per
+                            la comunicazione con quel client, nelle applicazioni multi thread, il server crea un thread
+                            dedicato per gestire le operazioni in maniera concorrente</li>
+                        <li>Il server ora riceve informazioni dal client e le rielabora. Dopo questo invia i dati
+                            rielaborati e quando il programma lo prevede, chiude la connessione</li>
+                    </ol>
+                </li>
+                <li>
+                    <p><strong>Client</strong></p>
+                    <ol>
+                        <li>Il client crea una socket internet e lascia al kernel la scelta di una porta che verrà generata casualmente.</li>
+                        <li>Il client tenta la connessione al server, specificando l’indirizzo ip e la porta</li>
+                        <li>Il client invia i dati da elaborare e attende la ricezione dei nuovi dati</li>
+                        <li>Quando il programma lo prevede, procede con la chiusura della socket.</li>                
+                    </ol>
+                </li>
+            </ul>
+            <p>
+                Alcuni passaggi potrebbero differire leggermente in caso di socket stream e datagram, in quanto la seconda non prevede l’inizializzazione di una comunicazione.
+            </p>
+        </div>
     </main>
     <div id="footer_placeholder"></div>
     <script src="scripts/loadHeaderNav.js"></script>
