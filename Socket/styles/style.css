@@ -46,3 +46,11 @@ body
 [data-bs-theme=dark] .inverse-color-filter{
   filter: none !important;
 }
+
+.fit-cover{
+  object-fit: cover;
+}
+
+.card{
+  width: 18rem;
+}

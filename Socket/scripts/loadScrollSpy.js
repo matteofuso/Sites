@@ -1,89 +1,172 @@
 const glossario = [
-  [
-    {
-      term: "Socket",
-      definition:
-        "Un socket è un punto di comunicazione tra due processi. In particolare, un socket è un file speciale che rappresenta un canale di comunicazione tra due processi. Un processo può scrivere dati su un socket o leggere dati da un socket. I socket possono essere utilizzati per comunicare tra processi su una singola macchina o tra processi su macchine diverse.",
-      link: "socket.html",
-    },
-    {
-      term: "Server",
-      definition:
-        "Un server è un computer o un programma che fornisce servizi ad altri programmi o dispositivi, noti come client. I server possono fornire una vasta gamma di servizi, tra cui la condivisione di file, l'accesso a pagine Web, l'elaborazione di dati e altro ancora.",
-      link: "server.html",
-    },
-    {
-      term: "Database",
-      definition:
-        "Un database è un sistema organizzato per la raccolta, la gestione e l'archiviazione dei dati. I database consentono di conservare informazioni in modo strutturato, facilitando l'accesso, la modifica e l'analisi dei dati stessi.",
-      link: "database.html",
-    },
-    {
-      term: "API",
-      definition:
-        "Un API (Application Programming Interface) è un insieme di regole e definizioni che consente a diversi software di comunicare tra loro. Le API permettono di integrare funzionalità e servizi esterni nelle applicazioni.",
-      link: "api.html",
-    },
-  ],
-  [
-    {
-      term: "Client",
-      definition:
-        "Un client è un computer o un programma che accede ai servizi forniti da un server. I client possono accedere ai servizi di un server tramite una rete o tramite un'interfaccia utente.",
-      link: "client.html",
-    },
-    {
-      term: "Frontend",
-      definition:
-        "Il frontend si riferisce alla parte dell'applicazione con cui gli utenti interagiscono direttamente. Include elementi come layout, design, e interfacce utente sviluppate usando tecnologie come HTML, CSS e JavaScript.",
-      link: "frontend.html",
-    },
-    {
-      term: "Backend",
-      definition:
-        "Il backend si riferisce alla parte dell'applicazione che gestisce la logica, il database e le operazioni lato server. È responsabile dell'elaborazione dei dati, della gestione delle richieste e della comunicazione con il frontend.",
-      link: "backend.html",
-    },
-    {
-      term: "Framework",
-      definition:
-        "Un framework è un insieme di strumenti e librerie che forniscono una struttura di base per lo sviluppo di applicazioni. Facilita lo sviluppo standardizzando il codice e offrendo soluzioni predefinite per problemi comuni.",
-      link: "framework.html",
-    },
-  ],
+  {
+    term: "Interfaccia",
+    definition:
+      "Un'interfaccia è il punto di contatto tra due sistemi o tra due componenti di un sistema.",
+  },
+  {
+    term: "Rete",
+    definition:
+      "Una rete è un insieme di dispositivi elettronici collegati tra loro per lo scambio di informazioni.",
+    link: "iso-osi.html",
+  },
+  {
+    term: "Protocollo",
+    definition:
+      "Un protocollo è un insieme di regole che definiscono il formato dei messaggi scambiati tra due o più dispositivi.",
+  },
+  {
+    term: "DNS",
+    definition:
+      "Il Domain Name System (DNS) è un sistema che associa nomi di dominio a indirizzi IP.",
+  },
+  {
+    term: "HTTP",
+    definition:
+      "Hypertext Transfer Protocol (HTTP) è un protocollo di comunicazione usato per trasferire documenti ipertestuali, principalmente siti.",
+  },
+  {
+    term: "FTP",
+    definition:
+      "File Transfer Protocol (FTP) è un protocollo di rete usato per il trasferimento di file tra un client e un server.",
+  },
+  {
+    term: "IPC",
+    definition:
+      "Inter-Process Communication (IPC) è un insieme di metodi per lo scambio di dati tra processi.",
+  },
+  {
+    term: "LAN",
+    definition:
+      "Una Local Area Network (LAN) è una rete di computer che copre un'area geografica limitata.",
+    link: "iso-osi.html",
+  },
+  {
+    term: "Internet",
+    definition: "Internet è una rete globale di computer interconnessi.",
+    link: "iso-osi.html",
+  },
+  {
+    term: "TCP",
+    definition:
+      "Transmission Control Protocol (TCP) è un protocollo di comunicazione che garantisce la consegna dei dati.",
+    link: "iso-osi.html",
+  },
+  {
+    term: "UDP",
+    definition:
+      "User Datagram Protocol (UDP) è un protocollo di comunicazione che non garantisce la consegna dei dati.",
+    link: "iso-osi.html",
+  },
+  {
+    term: "Multicast",
+    definition:
+      "Il multicast è una tecnica di comunicazione che consente a un host di inviare un messaggio a un gruppo di destinatari.",
+    link: "iso-osi.html",
+  },
+  {
+    term: "Multi-Thread",
+    definition:
+      "Un thread è un l'unità minima di esecuzione di un programma. Un processo può contenere più thread.",
+  },
+  {
+    term: "Kernel",
+    definition:
+      "Il kernel è il nucleo di un sistema operativo. Gestisce le risorse hardware e fornisce servizi ai processi.",
+  },
+  {
+    term: "Modulazione",
+    definition:
+      "La modulazione è una tecnica di trasmissione che consente di inviare segnali su un canale di comunicazione.",
+    link: "iso-osi.html",
+  },
+  {
+    term: "Incapsulamento",
+    definition:
+      "L'incapsulamento è una tecnica di che nasconde i dettagli di implementazione di altri componenti, in questo modo ognuno può concentrarsi a fare esclusivamente il prorprio lavoro.",
+  },
+  {
+    term: "MAC",
+    definition:
+      "Il Media Access Control (MAC) è un indirizzo univoco assegnato a una scheda di rete.",
+    link: "iso-osi.html",
+  },
+  {
+    term: "CRC",
+    definition:
+      "Il Cyclic Redundancy Check (CRC) è un algoritmo per il controllo degli errori nei dati trasmessi.",
+    link: "iso-osi.html",
+  },
+  {
+    term: "Peer-To-Peer",
+    definition:
+      "Il Peer-To-Peer (P2P) è un modello di rete in cui i nodi partecipanti condividono risorse tra loro.",
+  },
+  {
+    term: "Browser",
+    definition:
+      "Un browser è un'applicazione che consente di visualizzare e interagire con i contenuti web.",
+  },
+  {
+    term: "Load-Balancing",
+    definition:
+      "Il Load-Balancing è una tecnica che distribuisce il carico di lavoro tra più server.",
+  },
+  {
+    term: "Crittografare",
+    definition:
+      "La crittografia è una tecnica che consente di proteggere i dati tramite l'uso di algoritmi matematici.",
+  },
 ];
-const scrollspyTarget = document.getElementById("scrollspyTarget");
-const scrollspy = document.querySelector("#scrollspy div");
+glossario.sort((a, b) => a.term.localeCompare(b.term));
 
-glossario.forEach((group) => {
-  const groupTitle = document.createElement("h2");
-  groupTitle.textContent = group[0].term[0].toUpperCase();
-  groupTitle.id = groupTitle.textContent;
-  scrollspyTarget.appendChild(groupTitle);
-
-  const spyTitle = document.createElement("a");
-  spyTitle.href = `#${groupTitle.textContent}`;
-  spyTitle.textContent = groupTitle.textContent;
-  spyTitle.classList = "nav-link";
-
-  const spyContainer = document.createElement("div");
-  group.forEach((item) => {
+const loadGlossario = function() {
+  let groupTitle;
+  let spyTitle;
+  let spyContainer;
+  const scrollspyTarget = document.getElementById("scrollspyTarget");
+  const scrollspy = document.querySelector("#scrollspy div");
+  glossario.forEach((e, index) => {
+    if (!groupTitle || e.term[0].toUpperCase() !== groupTitle.textContent) {
+      if (spyTitle && spyContainer) {
+        scrollspy.appendChild(spyTitle);
+        scrollspy.appendChild(spyContainer);
+      }
+      groupTitle = document.createElement("h2");
+      groupTitle.textContent = e.term[0].toUpperCase();
+      groupTitle.id = groupTitle.textContent;
+      scrollspyTarget.appendChild(groupTitle);
+      spyTitle = document.createElement("a");
+      spyTitle.href = `#${groupTitle.textContent}`;
+      spyTitle.textContent = groupTitle.textContent;
+      spyTitle.classList = "nav-link";
+      spyContainer = document.createElement("div");
+    }
     const glossaryContainer = document.createElement("div");
     const glossaryTitle = document.createElement("h5");
     const glossaryDefinition = document.createElement("p");
-    glossaryContainer.id = `${item.term}`;
-    glossaryTitle.innerHTML = `${item.term} <a href="${item.link}"><i class="bi bi-link-45deg"></i></a>`;
-    glossaryDefinition.textContent = item.definition;
+    glossaryContainer.id = `${e.term}`;
+    if (e.link) {
+      glossaryTitle.innerHTML = `${e.term.replaceAll("-", " ")} <a href="${
+        e.link
+      }"><i class="bi bi-link-45deg"></i></a>`;
+    } else {
+      glossaryTitle.textContent = e.term.replaceAll("-", " ");
+    }
+    glossaryDefinition.textContent = e.definition;
     glossaryContainer.appendChild(glossaryTitle);
     glossaryContainer.appendChild(glossaryDefinition);
     scrollspyTarget.appendChild(glossaryContainer);
-    
     const spyItem = document.createElement("a");
-    spyItem.href = `#${item.term}`;
-    spyItem.textContent = item.term;
+    spyItem.href = `#${e.term}`;
+    spyItem.textContent = e.term.replaceAll("-", " ");
     spyItem.classList = "nav-link ms-3 my-1";
     spyContainer.appendChild(spyItem);
+    if (index === glossario.length - 1) {
+      scrollspy.appendChild(spyTitle);
+      scrollspy.appendChild(spyContainer);
+    }
   });
-  scrollspy.appendChild(spyTitle);
-  scrollspy.appendChild(spyContainer);
-});
+}
+
+loadGlossario();
