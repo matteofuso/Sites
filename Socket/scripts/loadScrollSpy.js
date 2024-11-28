@@ -19,21 +19,25 @@ const glossario = [
     term: "DNS",
     definition:
       "Il Domain Name System (DNS) è un sistema che associa nomi di dominio a indirizzi IP.",
+    link: "https://it.wikipedia.org/wiki/Domain_Name_System"
   },
   {
     term: "HTTP",
     definition:
       "Hypertext Transfer Protocol (HTTP) è un protocollo di comunicazione usato per trasferire documenti ipertestuali, principalmente siti.",
+    link: "https://it.wikipedia.org/wiki/Hypertext_Transfer_Protocol"
   },
   {
     term: "FTP",
     definition:
       "File Transfer Protocol (FTP) è un protocollo di rete usato per il trasferimento di file tra un client e un server.",
+    link: "https://it.wikipedia.org/wiki/File_Transfer_Protocol"
   },
   {
     term: "IPC",
     definition:
       "Inter-Process Communication (IPC) è un insieme di metodi per lo scambio di dati tra processi.",
+    link: "https://it.wikipedia.org/wiki/Comunicazione_tra_processi"
   },
   {
     term: "LAN",
@@ -73,6 +77,7 @@ const glossario = [
     term: "Kernel",
     definition:
       "Il kernel è il nucleo di un sistema operativo. Gestisce le risorse hardware e fornisce servizi ai processi.",
+    link: "https://it.wikipedia.org/wiki/Kernel"
   },
   {
     term: "Modulazione",
@@ -101,6 +106,7 @@ const glossario = [
     term: "Peer-To-Peer",
     definition:
       "Il Peer-To-Peer (P2P) è un modello di rete in cui i nodi partecipanti condividono risorse tra loro.",
+    link: "https://it.wikipedia.org/wiki/Peer-to-peer"
   },
   {
     term: "Browser",
