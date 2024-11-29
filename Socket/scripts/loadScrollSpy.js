@@ -155,7 +155,7 @@ const loadGlossario = function() {
     if (e.link) {
       glossaryTitle.innerHTML = `${e.term.replaceAll("-", " ")} <a href="${
         e.link
-      }"><i class="bi bi-link-45deg"></i></a>`;
+      }" ${e.link.startsWith("http")?'target="blank"':""}><i class="bi bi-link-45deg"></i></a>`;
     } else {
       glossaryTitle.textContent = e.term.replaceAll("-", " ");
     }
