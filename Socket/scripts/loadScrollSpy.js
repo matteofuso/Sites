@@ -151,11 +151,12 @@ const loadGlossario = function() {
     const glossaryContainer = document.createElement("div");
     const glossaryTitle = document.createElement("h5");
     const glossaryDefinition = document.createElement("p");
+    glossaryTitle.glossaryContainer = "scroll-margin";
     glossaryContainer.id = `${e.term}`;
     if (e.link) {
       glossaryTitle.innerHTML = `${e.term.replaceAll("-", " ")} <a href="${
         e.link
-      }" ${e.link.startsWith("http")?'target="blank"':""}><i class="bi bi-link-45deg"></i></a>`;
+      }" ${e.link.startsWith("http")?'target="_blank"':""}><i class="bi bi-link-45deg"></i></a>`;
     } else {
       glossaryTitle.textContent = e.term.replaceAll("-", " ");
     }

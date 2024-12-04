@@ -19,23 +19,24 @@
   display: block !important;
 }
 
-body
-{
-  padding-top: 11rem;
-  min-height: 100vh;
-}
-
 .top-min{
   top: 11rem;
 }
 
+.scroll-margin{
+  scroll-margin-top: 300px;
+  scroll-margin-bottom: 5rem;
+}
+
 @media (max-width: 992px) {
-  body {
-    padding-top: 6rem;
-  }
 
   .top-min{
     top: 6rem;
+  }
+
+  .scroll-margin{
+    scroll-margin-top: 11rem;
+    scroll-margin-bottom: 6rem;
   }
 }
 

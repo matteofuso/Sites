@@ -1,6 +1,6 @@
 const header = document.createElement("div");
-header.innerHTML = `<div class="fixed-top">
-    <header class="bg-body py-3 border-bottom shadow-lg" data-bs-theme="dark">
+header.innerHTML = `<div class="navbar navbar-expand-lg sticky-top flex-column pt-0">
+    <header class="bg-body py-3 border-bottom shadow-lg w-100" data-bs-theme="dark">
         <div class="container d-flex p-2 justify-content-between align-items-center">
             <a href="./" class="link-body-emphasis d-flex text-decoration-none align-items-center">
                 <i class="bi bi-ethernet mx-3 h2 my-0"></i>
@@ -48,7 +48,7 @@ header.innerHTML = `<div class="fixed-top">
             </div>
         </div>
     </header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary py-0 shadow-lg" data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary py-0 shadow-lg w-100" data-bs-theme="dark">
         <div class="container-fluid">
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav my-3">
