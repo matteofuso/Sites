@@ -19,9 +19,7 @@
   display: block !important;
 }
 
-body
-{
-  padding-top: 11rem;
+body{
   min-height: 100vh;
 }
 
@@ -29,13 +27,24 @@ body
   top: 11rem;
 }
 
+:target {
+  scroll-margin-top: 12rem;
+}
+
 @media (max-width: 992px) {
-  body {
-    padding-top: 6rem;
-  }
 
   .top-min{
     top: 6rem;
+  }
+
+  :target {
+    scroll-margin-top: 7rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .index-hero{
+    height: 30vh !important;
   }
 }
 
@@ -53,4 +62,13 @@ body
 
 .card{
   width: 18rem;
+}
+
+.index-hero{
+  height: 45vh;
+}
+
+.index-hero > div{
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
 }
