@@ -62,6 +62,8 @@ body{
 
 .index-hero{
   height: 45vh;
+  background-repeat: no-repeat;
+  background-size: auto;
 }
 
 .index-hero > div{
