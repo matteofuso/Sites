@@ -23,12 +23,8 @@ body{
   min-height: 100vh;
 }
 
-.top-min{
-  top: 11rem;
-}
-
 :target {
-  scroll-margin-top: 12rem;
+  scroll-margin-top: 11rem;
 }
 
 @media (max-width: 992px) {
@@ -36,15 +32,15 @@ body{
   .top-min{
     top: 6rem;
   }
-
-  :target {
-    scroll-margin-top: 7rem;
-  }
 }
 
 @media (max-width: 576px) {
   .index-hero{
     height: 30vh !important;
+  }
+
+  :target {
+    scroll-margin-top: 7rem;
   }
 }
 

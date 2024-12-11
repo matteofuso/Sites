@@ -54,6 +54,9 @@ indexContent.indexContent.forEach((e) => {
         </div>`;
 })
 
+const navigationTitle = document.getElementById("navigation-title");
+navigationTitle.textContent = indexContent.navigation.title;
+
 const navigation_container = document.getElementById("navigation-container");
 const card_container = document.getElementById("card-container");
 navigation_container.querySelector("h3").textindexContent = indexContent.navigation.title;

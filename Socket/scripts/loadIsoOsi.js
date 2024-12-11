@@ -107,7 +107,7 @@ contentIsoOsi.carousel.forEach((e, i) => {
     const slide = `
         <div class="carousel-item ${active}" id="${e.title.toLowerCase().replaceAll(" ", "-")}">
             <h4>${e.title}</h4>
-            <p>${e.description}</p>
+            ${e.description.startsWith("<p>") ? e.description : `<p>${e.description}</p>`}
         </div>`;
     carouselContainer.innerHTML += slide;
     osiModel.innerHTML+=`
