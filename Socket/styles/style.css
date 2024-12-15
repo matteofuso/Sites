@@ -63,7 +63,8 @@ body{
 .index-hero{
   height: 45vh;
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
+  background-position: center center;
 }
 
 .index-hero > div{

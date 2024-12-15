@@ -109,8 +109,9 @@ const socketContent = {
     }
 }
 
-const title = document.querySelector('title');
+const title = document.querySelector('#title');
 title.innerHTML = socketContent.title;
+document.title += " - " + socketContent.title;
 
 const sections = document.getElementById("sections");
 socketContent.sections.forEach((section) => {
@@ -185,7 +186,6 @@ processo.querySelector("p").innerHTML = socketContent.processo.description;
 
 const list = document.createElement("ul");
 socketContent.processo.list.forEach((actor) => {
-    console.log(actor);
     const actorList = document.createElement("li");
     actorList.innerHTML = `<strong>${actor.title}</strong>`;
     const sublist = document.createElement("ol");

@@ -86,6 +86,7 @@ window.addEventListener("hashchange", updateSlide);
 
 const title = document.getElementById("title");
 title.innerHTML = contentIsoOsi.title;
+document.title += " - " + contentIsoOsi.title;
 
 const osiTitle = document.getElementById("osi-title");
 osiTitle.innerHTML = contentIsoOsi["nav-title"];

@@ -71,6 +71,7 @@ const clientServerContent = {
 
 const title = document.getElementById("title");
 title.textContent = clientServerContent.title;
+document.title += " - " + clientServerContent.title;
 
 const sections = document.getElementById("sections");
 clientServerContent.sections.forEach((section) => {
